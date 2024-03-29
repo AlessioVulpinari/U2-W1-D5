@@ -114,6 +114,7 @@ section {
   display: flex;
   width: 30%;
   gap: 1.5rem;
+  line-height: normal;
 }
 
 .card-text-container {
@@ -146,13 +147,18 @@ section {
 
 /* SECTION 3 */
 
+#third-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-right: 4rem;
+}
+
 #articles-container {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-  margin-top: 2rem;
 }
 
 article {
@@ -178,6 +184,7 @@ article {
 .article-text-container ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
 }
 
@@ -187,6 +194,16 @@ article {
 
 .article-text-container p:nth-of-type(2) {
   font-weight: bold;
+}
+
+.article-text-container p:not(:nth-of-type(2)) {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.article-text-container ul li:nth-last-of-type(2) {
+  background-color: #00000010;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
 }
 
 .img-container {
@@ -227,3 +244,56 @@ article {
 }
 
 /* ASIDE */
+
+aside {
+  position: sticky;
+  top: 80px;
+  width: 40%;
+  height: 100%;
+  font-size: 0.8rem;
+}
+
+aside h3 {
+  font-weight: 700;
+}
+
+.topics-container ul,
+.links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topics-container ul {
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.topics-container ul li {
+  width: 30%;
+  border-radius: 25px;
+  padding: 1rem 0.5rem;
+  background-color: #00000010;
+  text-align: center;
+}
+
+h5 {
+  color: #1a8917;
+
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #00000010;
+}
+
+.links ul {
+  text-align: left;
+}
+
+.links ul li {
+  width: 15%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

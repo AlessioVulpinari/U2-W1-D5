@@ -97,6 +97,7 @@ section {
 
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 #first-section .text-container {
@@ -138,6 +139,12 @@ section {
 
   #first-section img {
     display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  section {
+    padding-left: 1.5rem;
   }
 }
 
@@ -205,6 +212,16 @@ section {
 
   .card {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  #second-section {
+    padding-right: 1.5rem;
+  }
+
+  .card {
+    width: 45%;
   }
 }
 
@@ -361,7 +378,7 @@ h5 {
   margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   aside {
     position: static;
     order: -1;
@@ -380,5 +397,14 @@ h5 {
   #third-section {
     padding-right: 1rem;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  #third-section {
+    padding-right: 1.5rem;
+  }
+  .topics-container ul li {
+    width: 22.5%;
   }
 }
